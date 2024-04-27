@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        转换：
+        1，块元素，display: block; 常见：div,p,h,ul,ol,li,table
+        2，行内元素，display: inline; 常见：span,a,strong,img,br,input
+        3，行内块元素，display:inline-block; 常见：img,input,a
+
+        块元素 支持自定义高宽度、padding(内边距)和margin(外边距),单独占一行，自上而下
+        行内元素 不支持自定义高宽度和其他属性，靠内容撑开，可以与其他元素排列一起
+        行内块元素 同时兼容块元素和行内元素的两种属性
+
+        */
+        img{
+            display: block;
+        }
+        /* div{
+            background-color: blueviolet;
+            width: 300px;
+            height: 400px;
+            display: inline;
+        } */
+        a{
+            background-color: black;
+            color: white;
+            padding: 10px;
+            display: inline-block;
+        }
+        a:hover{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <a href="" class="box">首页</a>
+    <a href="">国内</a>
+    <a href="">国际</a>
+    <a href="">军事</a>
+    <a href="">科技</a>
+    <div>1111111</div>
+
+    <!-- <img src="html实例图片.jpeg" alt="">
+
+    <p>11111111</p>
+    <div>
+    22
+    </div> -->
+</body>
+</html>

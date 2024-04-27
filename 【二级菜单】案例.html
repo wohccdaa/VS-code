@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 300px;
+            margin: 0 auto; /* 外边距：上下边距是0,左右自动居中. */
+        }
+        ul{
+            list-style: none; /* 移除列表默认样式. */
+        }
+        .box .item{
+            float: left; /* 向左浮动. */
+            width: 148px;
+            border: 1px solid blue;
+            color: white;
+            line-height: 40px;
+            background: rgb(0, 89, 255);
+            text-align: center;
+        }
+        .item:hover{ /* 当鼠标停留在item上 */
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul class="box">
+            <li class="item">视频教程
+                <!-- <ul>
+                    <li>全部视频教程</li>
+                    <li>HTML视频教程</li>
+                    <li>JAVA视频教程</li>
+                    <li>PYTHON视频教程</li>
+                </ul> -->
+            </li>
+            <li class="item">考试认证
+                <!-- <ul>
+                    <li>PMP</li>
+                    <li>红帽</li>
+                </ul> -->
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

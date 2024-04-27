@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>Lightly-HTML-Project</title>
+      <style>
+        .box1{
+          /* width: 400px;
+          height: 400px;  
+          background-color: yellow;
+          background-color: rgba(0, 0, 255);
+          background-color: #fff; */
+          /* 以上代表三种颜色写法，第一行即颜色单词，rgb数值，16进制 */
+        }
+        .box2{
+          /* width: 200px;
+          height: 200px;
+          background-color: rgba(0, 0, 255, 0.7); */
+          /* 以上代表rgb颜色代码,最后一位a代表透明度。0.5即50%透明度 */
+        }
+        .box3{
+          width: 400px;
+          height: 1000px;
+          background-color: blue;
+          background-image:url(https://img-mom.bitibiti.cc/img/file_158.jpg);
+          background-size: contain;
+          /* background-repeat: no-repeat; */
+          background-attachment: fixed;
+
+          /* background-position: 20px 20px; */
+          /* 以上为图片背景属性，代表边间距有20px的距离*/
+          background-position:center center ;
+          /* 以上代表图片属性位置为：中间 下面 */
+        
+
+          /*   有以下 3 种写法
+             1. 10%  10% 百分比
+             2. 20px 20px 像素
+             3. 水平方向：left（左）center（中间）right（右）
+                垂直方向：top（上）center（中间）bottom（下）
+          */
+
+          /* background-repeat: no-repeat; */
+          /* 以上为图片背景属性，默认平铺模式  
+             repeat-x，在x轴上平铺
+             repeat-y，在y轴上平铺
+             no-repeat，不平铺
+          */
+        }
+          .box4{
+          background-image:url(https://img-mom.bitibiti.cc/img/file_158.jpg);
+          background-repeat: no-repeat;
+          width: 200px;
+          height:1000px;
+          background-color: red;
+         /* background-size: 500px;*/
+         /* 上面代表是图片放大到500px */
+          background-size: cover;
+          /* 上面代表是图片等比例放大至600px */
+          background-position: center center;
+          
+
+          /*  名词解析：
+          cover 直接放大，铺满整个尺寸
+          contain  按比例放大，适度填充*/
+        }
+      </style>  
+  </head> 
+  <body>
+      <div class="box1">
+        <div class="box2"></div>
+      </div>
+      <p class="box3"></p>
+      <br>
+      <p class="box4"></p>
+  </body>
+</html>

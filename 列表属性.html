@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>Lightly-HTML-Project</title>
+      <style>
+        ul{
+          list-style-type:disc;
+        /* disc代表实心原 circle代表空心圆 squanre代表实心方块* none代表没有 */
+
+          list-style-image: url();
+          /* 以上代表列表行中前自定义图标 */
+          }
+          li{
+            border:1px solid red;
+            list-style-position:inside;
+          }
+          .box{
+            list-style:square inside;
+            /* 以上代表复合属性，方块 表内 */
+          }
+      </style>
+  </head>
+  <body>
+      <ul>
+        <li>111111</li>
+        <li>222222</li>
+        <li>333333</li>
+      </ul>
+      <ul class="box">
+        <li>4444</li>
+        <li>5555</li>
+        <li>6666</li>
+      </ul>
+  </body>
+</html>

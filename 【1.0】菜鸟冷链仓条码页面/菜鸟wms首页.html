@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="https://g.alicdn.com/dpl/res/favicon/dabao.png">
+    <title>Cone</title>
+    <meta name="description" content="">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="dns-prefetch" href="https://img.alicdn.com">
+
+    <link rel="stylesheet" href="https://cn.alicdn.com/lib/cn-ui/cn-ui/0.8.25/dist/cn-ui.css"/>
+    <link rel="stylesheet" href="//o.alicdn.com/wms-v3/wms-header/index.css"/>
+
+    <link href="//g.alicdn.com/cainiao-wms-fe/standard-packing/0.4.24/css/index.css" rel="stylesheet">
+    <style>
+        @-webkit-keyframes index-loading{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@keyframes index-loading{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}
+        #loading-wrapper .loading{
+          display:flex;align-items:center;justify-content:center;width:100vw;height:90vh;font-size:13px;color:#999;flex-direction:column;
+        }
+        #loading-wrapper .loading img{
+          animation: index-loading 2s linear infinite;;opacity:0.1;width:100px;
+        }
+
+    </style>
+</head>
+<body><script>
+with(document)with(body)with(insertBefore(createElement("script"),firstChild))setAttribute("exparams","category=&userid=&aplus&yunid=&&trid=213e367217137779985925003e0df3&asid=AQAAAABOLSZmSJXLVgAAAAArdyN9AIGbXg==",id="tb-beacon-aplus",src=(location>"https"?"//g":"//g")+".alicdn.com/alilog/mlog/aplus_v2.js")
+</script>
+<script src="//g.alicdn.com/evil-genius/P0/index.js"></script>
+<div id="loading-wrapper">
+    <div class="loading">
+        <img
+                src="https://img.alicdn.com/imgextra/i4/O1CN01fju1Fk1l8zyxwSsY4_!!6000000004775-55-tps-200-200.svg"
+        /><br/>
+        <div>
+            加载中...
+        </div>
+    </div>
+</div>
+<div id="root"></div>
+<script>
+    if (window.React && window.PropTypes) {
+      React.PropTypes = PropTypes;
+    }
+    window.VERSION = '';
+    (function() {
+      var oldOnload = window.onload;
+      function hideLoading() {
+        var loadingElement = document.getElementById('loading-wrapper');
+        if (loadingElement) {
+          loadingElement.style.display = 'none';
+        }
+      }
+      window.onload = function() {
+        if (typeof oldOnload === 'function') {
+          oldOnload.call(this);
+        }
+        hideLoading();
+      };
+      setTimeout(hideLoading, 2000);
+    })();
+
+</script>
+<script src="//g.alicdn.com/code/lib/??babel-polyfill/6.26.0/polyfill.min.js,react/16.9.0/umd/react.production.min.js,react-dom/16.9.0/umd/react-dom.production.min.js"
+        charset="utf-8"></script>
+<script src="https://g.alicdn.com/code/lib/prop-types/15.7.2/prop-types.min.js"></script>
+<script crossorigin src="https://gw.alipayobjects.com/os/lib/moment/2.29.1/min/moment-with-locales.min.js"></script>
+<script crossorigin src="https://cn.alicdn.com/lib/cn-ui/cn-ui/0.8.25/dist/cn-ui.js"></script>
+<script crossorigin src="//o.alicdn.com/wms-v3/wms-header/index.js"></script>
+
+<script type="text/javascript"
+        src="//g.alicdn.com/cainiao-wms-fe/standard-packing/0.4.24/js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>Lightly-HTML-Project</title>
+      <style>
+        .box1,.box2{
+          width: 200px;
+          height: 200px;
+          float: left;
+        }
+        .conxx{
+          /* height: 200px; */
+          overflow: hidden;
+          /* 引入bfc，自动计算宽高 */
+        }
+        .box1{
+          background-color: yellow;
+        }
+        .box2{
+          background-color: blue;
+        }
+        .box{
+          background-color: red;
+          width: 400px;
+          height: 400px;
+          /* clear: left; */
+        /* 清除左边浮动 */
+        }
+      </style>
+      <!-- 
+        1,写固定,把高度写进div中
+        2,写清浮动属性,clear：left 代表清除上边左边的浮动属性
+          right,both(左右都清除)
+        3,当前浮动元素后面，写一个空标签，行内写清除浮动属性clear：both
+        4,overflow: hidden; 引入bfc，自动计算宽高
+      -->
+  </head>
+  <body>
+      <div class="conxx">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <!-- <div style="clear: both;"></div> -->
+      </div>
+
+      <div class="box"></div>
+  </body>
+</html>

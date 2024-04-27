@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: blue;
+            width: 200px;
+            height: 200px;
+            white-space: nowrap; 
+            overflow: hidden; /* 溢出切断 */
+            text-overflow: ellipsis;
+        }
+        
+        /* 
+        【white-space属性值】
+
+        1，nowrap:不换行
+        2，pre:显示空格，回车，不换行
+        3，pre-wrap:显示空格，回车，换行
+        4，pre-line:显示回车，不显示空格，换行 
+
+        */
+    </style>
+</head>
+<body>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque iste numquam vero. Amet saepe repellat, a facere nam doloribus suscipit ducimus facilis culpa ratione consequatur necessitatibus, possimus dolorem tempora earum!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi inventore debitis, aliquid repellendus ratione sunt. Cum illum in ut aperiam esse. Ex ipsa fuga neque. Obcaecati quod rerum ad officiis.
+    </div>
+
+    <pre>
+        div{
+            background-color: blue;
+            width: 200px;
+            height: 200px;
+            white-space: nowrap; 
+        }
+        <!-- 代码显示标签，保留空格，换行，tab -->
+    </pre>
+</body>
+</html>

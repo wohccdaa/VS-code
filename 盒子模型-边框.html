@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>Lightly-HTML-Project</title>
+      <style>
+        .box1{
+          background-color: yellow;
+          width: 300px;
+          height: 300px;
+          border:10px dashed red ;
+          /* 以上代表边框10px 样式 红色 */
+          /* 边框样式：solid double dashed*/
+        }
+        /* box2为边框的属性为复合属性，复合写法，比较常见 */
+        .box2{
+          background-color: green;
+          width: 300px;
+          height: 300px;
+          border-top:5px solid blue;
+          /* 以上代表上边框5px 样式 颜色 */
+          border-right: 10px dotted red;
+          /* 以上代表右边框10px 样式 颜色 */
+        }
+        /* box3为边框的属性拆开写，比较少见 */
+        .box3{
+          background:blue;
+          width: 500px;
+          height: 500px;
+          /* border-top: 80px solid yellow; */
+          border-width: 100px 100px 99px 99px;
+          /* 边框的宽度为100px 支持四个方向的值，分别为上，右，下，左 */
+          border-color: black yellow green orange;
+          /* 边框的颜色 支持四个方向的值，分别为上，右，下，左*/
+          border-style: solid;
+          /* 边框的样式 支持四个方向的值，分别为上，右，下，左*/
+        }
+
+      </style>
+  </head>
+  <body>
+      <div class="box1"></div>
+      <div class="box2"></div>
+      <div class="box3"></div>
+  </body>
+</html>

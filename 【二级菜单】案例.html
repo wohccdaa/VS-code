@@ -16,7 +16,7 @@
         ul{
             list-style: none; /* 移除列表默认样式. */
         }
-        .box .item{
+        .box >li{
             float: left; /* 向左浮动. */
             width: 148px;
             border: 1px solid blue;
@@ -25,27 +25,43 @@
             background: rgb(0, 89, 255);
             text-align: center;
         }
-        .item:hover{ /* 当鼠标停留在item上 */
+        .box>li:hover{ /* 当鼠标停留在.box上 */
             background-color: lightblue;
+            
         }
+        .box>li ul{
+            display: none; /* 不显示 */
+            background-color: white;
+            color: black;
+        }
+        .box>li:hover ul{ /* hover是伪类,当鼠标停留在.box下的li子元素上,显示ul */
+            display: block;
+        }
+        .box>li li:hover{ /* 当鼠标停留在.box下的子元素li中,显示其属性 */
+            color: blue;
+        }
+
+        /* 知识拓展：子代选择器,用大于号>,可以直接选择元素下的第一二子元素，而不会选择其他的子元素. */
+        /* 知识拓展：子代选择器适用于多层嵌套情况. */
+
     </style>
 </head>
 <body>
     <div>
         <ul class="box">
-            <li class="item">视频教程
-                <!-- <ul>
+            <li>全部教程视频
+                <ul>
                     <li>全部视频教程</li>
                     <li>HTML视频教程</li>
                     <li>JAVA视频教程</li>
                     <li>PYTHON视频教程</li>
-                </ul> -->
+                </ul>
             </li>
-            <li class="item">考试认证
-                <!-- <ul>
+            <li>考试认证
+                <ul>
                     <li>PMP</li>
                     <li>红帽</li>
-                </ul> -->
+                </ul>
             </li>
         </ul>
     </div>

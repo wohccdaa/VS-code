@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+ul{
+    list-style: none; /* 移除列表默认样式 */
+}
+.con{
+    width: 966px;
+    margin: 0 auto;
+}
+.header{
+    /* background-color: yellow;  */
+    width: 966px;
+    height: 110px;
+}
+.logo{
+    width: 265px;
+    height: 110px;
+    background:url(../img/logo.png); /* web路径是/正斜杠,win文件是\反斜杠,需留意. */
+    float: left;
+}
+.headerright{
+    float: right;
+}
+.headerright ul{
+    height: 44px;
+    margin-top: 10px;
+    line-height: 44px;
+}
+.headerright li{
+    float: left;
+}
+.headerright li a{ 
+    border-right:1px solid #b2c7ea; 
+    padding: 0 13px; /* 某种情况下可以将设置宽度改为给padding加边距,比如行内元素设置不支持宽度. */
+    font-size: 13px;
+    color: #ababab;
+}
+.headerright .last{
+    padding-right: 0;
+    border: 0;
+}
+.headerright li .active{ /* 后代选择器与类选择器要用空格符分开来,如有相同属性值需注意优先级. */
+    color: #eb6ca1;
+}
+.search{
+    float: right;
+    width: 234px;
+    height: 28px;
+    border: 1px solid #d1d1d1;
+}
+.search input{
+    border: 0;
+    outline: none; /* 元素轮廓样式 */
+}
+.search .left{
+    width: 196px; /*需要注意宽度计算,超过其宽度便会换行. */
+    padding-left: 14px;
+    float: left;
+    height: 28px; /* 高度需与父盒子一致,才能占满. */
+}
+.search .right{
+    float: right;
+    width: 24px;
+    height: 28px;
+    background:url(../img/search.png) no-repeat left center;
+}

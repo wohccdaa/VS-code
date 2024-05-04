@@ -38,8 +38,8 @@ ul{
     color: #ababab;
 }
 .headerright .last{
-    padding-right: 0;
-    border: 0;
+    padding-right: 0; 
+    border: 0; 
 }
 .headerright li .active{ /* 后代选择器与类选择器要用空格符分开来,如有相同属性值需注意优先级. */
     color: #eb6ca1;
@@ -65,4 +65,48 @@ ul{
     width: 24px;
     height: 28px;
     background:url(../img/search.png) no-repeat left center;
+}
+
+.nav{
+    height: 53px;
+    line-height: 53px;
+    border-top: 1px solid #657588;
+    background: #0c345c;
+    color: white;
+}
+.nav li{
+    float: left;
+    font-size: 16px;
+    margin-right: 76px;
+}
+.banner{
+    height: 380px;
+    background:url(../img/lg.png);
+}
+.list{
+    height: 213px;
+    /* background-color:aqua; */
+    margin-top: 51px;
+    margin-bottom: 35px;
+}
+.item{
+    float: left;
+    height: 211px;
+    width: 305px;
+    border: 1px solid #ccc;
+    margin-right: 19px;
+
+}
+.item p{
+    height: 47px;
+    line-height: 47px;
+    font-size: 16px;
+    color: black;
+    padding-left: 28px;
+}
+.item img{
+    display: block; /* img为行内元素,不能控制其高宽度,转为块元素可以灵活控制高宽度.*/ 
+}
+.itemlast{
+    margin-right: 0;
 }

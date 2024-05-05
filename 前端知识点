@@ -1,0 +1,9 @@
+CSS ─ margin 與 padding 的區別
+margin
+
+用來調整元素與元素之間的距離，向外推出每個區塊之間的留白，可使用的屬性有：
+margin-top(上邊距)
+margin-right(右邊距)
+margin-bottom(下邊距)
+margin-left(左邊距)
+

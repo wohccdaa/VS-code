@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div[class]{
+            background-color: yellow;
+        }
+        p[class]{
+            background-color: blue;
+        }
+        /* input标签下属性名为name的 */
+        input[name]{
+            background-color: red;
+        }
+        /* input标签下属性名为type且有email值的,完全匹配 */
+        input[type=email]{
+            background-color: blue;
+        }
+
+        /* div下属性为class且完全匹配box1属性值的 完全匹配 语法: = */
+        div[class=box1]{
+            border: 1px solid red;
+        }
+        /* div下属性为class且包含box1属性值的, 语法: = */
+        div[class~=box1]{
+            border: 2px solid green;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">div-1111</div>
+    <div class="box2">div-2222</div>
+    <div>div-3333</div>
+
+
+    <div class="box1 box2">div-555555</div>
+
+    <p class="p1">p-1111</p>
+    <p class="p2">p-2222</p>
+    <p>p-3333</p>
+
+    <div>
+        <h1>注册页面</h1>
+        用户<input type="text" name="username"><br>
+        密码<input type="password" name="password"><br>
+        年龄<input type="number" name="age"><br>
+        邮箱<input type="email" ><br>
+    </div>
+</body>
+</html>

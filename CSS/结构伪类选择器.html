@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 以下代表选择li中第一个 */
+        li:first-child{
+            background-color: yellow;
+        }
+        /* 以下代表选择li中最后一个 */
+        li:last-child{
+            background-color: red;
+        }
+        /* 以下(3)代表选择li中第几个 */
+        li:nth-child(3){
+            background-color: green;
+        }
+        /* 以下(2n)代表选择li中的偶数,(2n+1或2n-1)为奇数 */
+        li:nth-child(2n){
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>11111</li>
+        <li>22222</li>
+        <li>33333</li>
+        <li>44444</li>
+        <li>55555</li>
+    </ul>
+</body>
+</html>

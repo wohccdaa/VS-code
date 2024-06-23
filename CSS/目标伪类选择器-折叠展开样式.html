@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.content{
+            display: none;
+        }
+        div.content:target{
+            display:block;
+        }
+        /* :target代表目标伪类,当点击某个目标,便会应用样式
+        以上代码就是默认隐藏div内容,但当点击某个div时,便会显示div其内容 */
+    </style>
+</head>
+<body>
+<div>
+    <a href="#aaa">aaa</a>
+    <div id="aaa"   class="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi tenetur asperiores doloribus, tempora iure vel molestias nihil, veritatis quod provident nobis nostrum similique quia perspiciatis, nesciunt aut molestiae et quos.
+    </div>
+</div>
+<div>
+    <a href="#bbb">bbb</a>
+    <div id="bbb"   class="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi tenetur asperiores doloribus, tempora iure vel molestias nihil, veritatis quod provident nobis nostrum similique quia perspiciatis, nesciunt aut molestiae et quos.
+    </div>
+</div>
+<div>
+    <a href="#ccc">ccc</a>
+    <div id="ccc"   class="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi tenetur asperiores doloribus, tempora iure vel molestias nihil, veritatis quod provident nobis nostrum similique quia perspiciatis, nesciunt aut molestiae et quos.
+    </div>
+</div>
+</body>
+</html>

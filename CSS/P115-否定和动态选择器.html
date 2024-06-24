@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* first-child代表选择第一个元素 */
+        /* li:first-child{
+            background-color: yellow;
+        } */
+
+        /* 以下意思是除了第一个元素全部选择上,即否定选择器 */
+        li:not(:first-child){
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>11111</li>
+        <li>22222</li>
+        <li>33333</li>
+    </ul>
+</body>
+</html>

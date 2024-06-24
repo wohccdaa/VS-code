@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* enabled代表【可用】状态的属性 此选择器会匹配可用状态的控件赋予样式 */
+        input:enabled{
+            background-color: red;
+        }
+        /* disabled代表被【禁用】的属性 此选择器会匹配禁用的控件赋予样式 */
+        input:disabled{
+            background-color: yellow;
+        }
+        /* focus代表【焦点】此选择器会匹配点击后的焦点赋予样式 */
+        input:focus{
+            background-color: blue;
+        }
+        input[type=checkbox]{
+            /* 清除默认样式 */
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            border: 1px solid black;
+        }
+        div::selection{
+            /* 选择样式 */
+            background: green;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        用户名<input type="text"><br>
+        密码<input type="password"><br>
+        记住用户名<input type="checkbox"><br>
+        <input type="submit" disabled>
+
+    </form>
+
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit iste labore totam neque vel rem deserunt consequuntur molestiae quaerat assumenda, possimus animi officiis dolores obcaecati nisi dolor temporibus? Ipsa, rerum.
+    </div>
+</body>
+</html>

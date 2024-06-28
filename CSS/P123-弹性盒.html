@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .box{
+        width: 500px;
+        height: 500px;
+        border: 2px solid black;
+        margin: 100px auto;
+        display: flex; /* 启用弹性盒 */
+    }
+    .box span{
+        width: 100px;
+        height: 100px;
+        margin: auto;
+        border: 1px dashed red;
+
+    }
+
+    /* 弹性盒是一种全新的布局方式, 适合移动端布局。 */
+
+    /* 
+    
+    改变：
+     1. 子元素默认横向排列
+
+     2. 行内元素变成块级元素 
+     span是行内元素,自定义宽高不生效, 但是弹性盒将其改变为块级元素, 宽高生效
+
+     3. 只有单个元素时, 写上 margin auto 会自动居中
+     
+     */
+
+    </style>
+</head>
+<body>
+    <span class="box">
+        <span>1111</span>
+        <!-- <span>2222</span>
+        <span>3333</span>
+        <span>4444</span> -->
+    </div>
+</body>
+</html>

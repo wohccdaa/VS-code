@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        input{
+            outline: none;
+            /* 移除元素的默认轮廓效果 */
+        }
+        div{
+            width: 935px;
+            height: 120px;
+            border: 1px solid #dedede;
+            margin: 10px auto;
+            background: #eceaeb;
+            border-radius: 15px;
+            /* 以下属性值依次为:水平的位置、垂直的位置、模糊的距离、模糊的颜色  
+               水平正值即向下 负值即向上 支持多个值 需用逗号隔开 */
+            box-shadow: 4px 11px 7px #bfbfbf, -4px 11px 7px #bfbfbf;
+        }
+        input[type=text]{
+            width: 683px;
+            height: 86px;
+            margin: 17px;
+            border: 3px solid #cccccc;
+            font-size: 25px;
+            border-radius: 4px; /* 圆角 */
+            text-indent: 11px;  /* 文本缩进 */
+        }
+        input[type=submit]{
+            width: 200px;
+            height: 83px;
+            background: #5ca3b4;
+            border-radius: 5px;
+            border: 3px solid #cccccc;
+            font-size: 23px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <div>
+            <input type="text" placeholder="Search for CSS3,HTML5,jQuery...">
+            <input type="submit" value="GO">
+        </div>
+    </form>
+</body>
+</html>

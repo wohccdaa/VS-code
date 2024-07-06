@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+            margin: 0 auto;
+            display: flex;
+        }
+        div{
+            /* width: 100px; */
+            height: 100px;
+            border: 2px dashed red;
+            box-sizing: border-box;
+            flex-direction:column; /* 主轴垂直或者纵向 */
+        }
+        .div1{
+            align-self: flex-start; /* 顶边对齐 */
+        }
+        .div2{
+            align-self: flex-end; /* 底部对齐 */
+        }
+        .div3{
+            align-self: center; /* 居中对齐 */
+        }
+        .div4{
+            align-self: baseline; /* 默认 */
+        }
+        .div5{
+            align-self: stretch; /* 拉伸对齐 */
+            /* 因主轴是垂直方向又为设置宽度, 默认撑满整个盒子  */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="div1">1111</div>
+        <div class="div2">2222</div>
+        <div class="div3">3333</div>
+        <div class="div4">4444</div>
+        <div class="div5">5555</div>
+    </div>
+</body>
+</html>
